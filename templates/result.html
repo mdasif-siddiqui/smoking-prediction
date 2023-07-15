@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somking Ditection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .registerbtn {
+            background-color: #e48912;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity:1;
+        }
+
+
+
+        input[type=submit]:hover {
+            background-color: #e48912;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<h2>Results: </h2>
+{% if prediction == 1%}
+<h2 style="color: rgb(189, 16, 16);">Chances of being Smoker.</h2>
+<p style="text-align:center;"><img src="https://drive.google.com/uc?export=view&id=1dgCe83jmhRs0ZR-ZQGd6fOUeL-FTd561" alt="HTML" width="350" height="250"></p>
+{% elif prediction == 0%}
+<h2 style="color: rgb(25, 197, 25);">Chances of being Non Smoker</h2>
+<p style="text-align: center;"><img src="https://drive.google.com/uc?export=view&id=1VPKsrHLdX8wEeeAYGKH_92-usZFe7gc8" alt="HTML" width="350" height="250"></p>
+{% endif %}
+
+
+
+
+
+</body>
+</html>

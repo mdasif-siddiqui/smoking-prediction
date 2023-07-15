@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somking Ditection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .registerbtn {
+            background-color: #e48912;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity:1;
+        }
+        p{
+            color: rgb(58, 139, 11);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #17cce4;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #ff9101c5;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<h2> <p style="text-align:center;">Somking Prediction</p></h2>
+<form action="/predict"method="post">
+    <label for="gender">Gender </label>
+    <select name="gender">
+      <option value="1">Male</option>
+      <option value="0" selected>Female</option>
+  </select>
+    <label for="height">Height</label><br>
+    <!-- <input type="text" name="Gender" placeholder="Gender value 1 for man 0 for women" required="required" />
+    <input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" /> -->
+    <input type="text" name="Height" placeholder="Height in cm" required="required" />
+    <!--  <input type="text" name="Blood Pressure" placeholder="Blood Pressure" required="required" />
+    <input type="text" name="Skin Thickness" placeholder="Skin Thickness" required="required" />-->
+    <label for="height">Height</label><br>
+    <input type="text" name="Weight" placeholder="Weight in kg" required="required" />
+    <label for="triglyceride">Triglyceride</label><br>
+    <input type="text" name="triglyceride" placeholder="Triglyceride" required="required" />
+    <label for="hemoglobin">Hemoglobin</label><br>
+    <input type="text" name="Hemoglobin" placeholder="Hemoglobin level Male: 13.8 to 17.2 AND Female: 12.1 to 15.1 g/dL" required="required" />
+    <label for="gtp">Gtp: γ-GTP</label><br>
+    <input type="text" name="Gtp" placeholder="Gtp for adults is 5 to 40 U/L" required="required" />
+    <button type="submit" class="registerbtn">Predict</button>
+
+</form>
+</div>
+
+</body>
+</html>
+
+
+        
